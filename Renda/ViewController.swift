@@ -27,6 +27,12 @@ class ViewController: UIViewController {
         tapCount = tapCount + 1
         countLabel.text = String(tapCount)
         
+        if tapCount >= 10 {
+            countLabel.textColor = UIColor.red
+        } else {
+            countLabel.textColor = UIColor.black
+        }
+        
     }
 
 
